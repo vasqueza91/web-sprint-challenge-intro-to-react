@@ -81,6 +81,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React is a user interface component library. You can fetch data from API's with react
+
 1. Describe component state.
+
+Components are the building blocks of a react app. They are javascript classes or functions that accept inputs and return a react element.
+
 1. Describe props.
+
+Props help pass data between parent and child
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects, affect something outside of the scope of a function. 
