@@ -28,18 +28,19 @@ const StyledH2 = styled.h2`
 
 
 const Character = props => {
-    const { data } = props;
+    const { char } = props;
+
+    
 
   return (
     <StyledDiv>
-        <StyledH1>{data.name}</StyledH1>
-        <StyledH2>Birth Year: {data.birth_year}</StyledH2>
-        <StyledH2>Mass: {data.mass}</StyledH2>
-        <StyledH2>Hair Color: {data.hair_color}</StyledH2>
-        <StyledH2>Skin Color: {data.skin_color}</StyledH2>
-        <StyledH2>Gender: {data.gender}</StyledH2>
-        <StyledH2>Films: {data.films.map(film =>{
-            return(<span key={film}> {film}; </span>)})}</StyledH2>
+        <StyledH1>{char.name}</StyledH1>
+        <StyledH2>Birth Year: {char.birth_year}</StyledH2>
+        <StyledH2>Mass: {char.mass}</StyledH2>
+        <StyledH2>Hair Color: {char.hair_color}</StyledH2>
+        <StyledH2>Skin Color: {char.skin_color}</StyledH2>
+        <StyledH2>Gender: {char.gender}</StyledH2>
+        <StyledH2>Films: {char.films}</StyledH2>
     </StyledDiv>
   );
 }

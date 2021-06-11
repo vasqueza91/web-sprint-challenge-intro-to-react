@@ -7,7 +7,8 @@ const App = () => {
     const [data, setData] = useState([])
     useEffect(() => {
       axios.get('https://swapi.dev/api/people')
-      .then((res)=>{
+      .then((res) => {
+        console.log(res)
         setData(res.data)
       })
       .catch()
@@ -23,7 +24,11 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Star Wars Characters</h1>
-      {data.map(element=>Character({'data':element}))}
+      <div className='container'>
+      {data.map((char, id) => {
+        return <Character key={id} char={char} />
+      })}
+    </div>
     </div>
   );
 }
