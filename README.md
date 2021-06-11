@@ -86,7 +86,7 @@ React is a user interface component library. You can fetch data from API's with 
 
 1. Describe component state.
 
-Components are the building blocks of a react app. They are javascript classes or functions that accept inputs and return a react element.
+Components are the building blocks of a react app. They are javascript classes or functions that accept inputs and return a react element..
 
 1. Describe props.
 
